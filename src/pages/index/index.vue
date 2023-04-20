@@ -1,5 +1,7 @@
-<script setup lang="ts">
+<script setup lang="ts" name="Index">
+const counterStore = useCounterStore()
 
+console.log('counterStore', counterStore)
 </script>
 
 <template>
@@ -9,6 +11,15 @@
       <button type="primary" mx-auto w-xl>
         Start
       </button>
+      <div flex-center my-md>
+        <button type="default" w-xs @click="counterStore.reduce">
+          -
+        </button>
+        <div>{{ counterStore.count }}</div>
+        <button type="default" w-xs @click="counterStore.increment">
+          +
+        </button>
+      </div>
     </div>
     <TheFooter />
   </div>
