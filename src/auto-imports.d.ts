@@ -47,6 +47,7 @@ declare global {
   const reactive: typeof import('vue')['reactive']
   const readonly: typeof import('vue')['readonly']
   const ref: typeof import('vue')['ref']
+  const req: typeof import('./apis/request')['req']
   const resolveComponent: typeof import('vue')['resolveComponent']
   const setActivePinia: typeof import('pinia')['setActivePinia']
   const setMapStoreSuffix: typeof import('pinia')['setMapStoreSuffix']
@@ -121,6 +122,7 @@ declare module 'vue' {
     readonly reactive: UnwrapRef<typeof import('vue')['reactive']>
     readonly readonly: UnwrapRef<typeof import('vue')['readonly']>
     readonly ref: UnwrapRef<typeof import('vue')['ref']>
+    readonly req: UnwrapRef<typeof import('./apis/request')['req']>
     readonly resolveComponent: UnwrapRef<typeof import('vue')['resolveComponent']>
     readonly setActivePinia: UnwrapRef<typeof import('pinia')['setActivePinia']>
     readonly setMapStoreSuffix: UnwrapRef<typeof import('pinia')['setMapStoreSuffix']>

@@ -15,7 +15,7 @@ export default defineConfig({
     AutoImport({
       imports: ['vue', 'pinia'],
       dts: 'src/auto-imports.d.ts',
-      dirs: ['src/composables', 'src/stores'],
+      dirs: ['src/composables', 'src/stores', 'src/apis'],
       vueTemplate: true,
     }),
     VueSetupExtend(),

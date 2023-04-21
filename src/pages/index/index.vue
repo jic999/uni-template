@@ -1,7 +1,23 @@
 <script setup lang="ts" name="Index">
+import { onLoad } from '@dcloudio/uni-app'
+
 const counterStore = useCounterStore()
 
 console.log('counterStore', counterStore)
+
+onLoad(() => {
+  console.log('loaded')
+  req({
+    method: 'GET',
+    url: '/api/posts',
+  })
+    .then((res) => {
+      console.log('res', res)
+    })
+    .catch((msg) => {
+      console.log('msg', msg)
+    })
+})
 </script>
 
 <template>
