@@ -13,7 +13,7 @@ export default defineConfig({
       dts: 'src/components.d.ts',
     }),
     AutoImport({
-      imports: ['vue', 'pinia'],
+      imports: ['vue', 'pinia', 'uni-app'],
       dts: 'src/auto-imports.d.ts',
       dirs: ['src/composables', 'src/stores', 'src/apis'],
       vueTemplate: true,
