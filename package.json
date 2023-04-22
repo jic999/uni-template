@@ -1,5 +1,7 @@
 {
   "name": "uni-template",
+  "author": "jic999",
+  "license": "MIT",
   "version": "0.0.0",
   "scripts": {
     "dev": "uni -p mp-weixin",
