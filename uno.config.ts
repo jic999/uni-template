@@ -8,6 +8,14 @@ export default {
       'flex-center': 'flex justify-center items-center',
     },
   ],
+  rules: [
+    [
+      /^lh-(\d+)$/,
+      ([, n]) => ({
+        'line-height': `${n / 100}`,
+      }),
+    ],
+  ],
   theme: {
     extend: {
       fontSize: {

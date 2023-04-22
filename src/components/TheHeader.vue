@@ -8,7 +8,7 @@ const titleRef = ref('Uni Template')
       {{ titleRef }}
     </div>
     <div i-carbon:sprout text-256 />
-    <div flex justify-center gap-x-xs py-md>
+    <div flex justify-center gap-x-xs pt-md>
       <div w-72 h-72 rounded-full bg-green-600 />
       <div w-72 h-72 rounded-full bg-blue-600 />
       <div w-72 h-72 rounded-full bg-orange-600 />

@@ -34,7 +34,19 @@
       }
     ]
   },
-  
+  "subPackages":[
+    {
+      "root": "pages_index",
+      "pages": [
+        {
+          "path": "start/index",
+          "style": {
+            "navigationBarTitleText": "Start"
+          }
+        }
+      ]
+    }
+  ],
   "globalStyle": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "uni-app",
